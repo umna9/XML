@@ -28,7 +28,7 @@ and open the template in the editor.
     
     <readers> Welcome Readers</readers>
     <staff> Welcome Staff </staff>
-    <address>&my_address</address>
+    <address>&my_address;</address>
     <sections> 
     
         <sectoin> 

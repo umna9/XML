@@ -19,5 +19,5 @@
 <!ELEMENT yearPublished (#PCDATA)>
 <!ELEMENT TheEdition (#PCDATA)>
 <!ATTLIST book id CDATA #REQUIRED>
-<!ENTITY my_address "Cairo">
+<!ENTITY my_address SYSTEM "Cairo">
 
