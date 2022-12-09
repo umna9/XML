@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="library" type= "libraryType"/>
+    <xs:complexType type = "libraryType">
+        <xs:sequence>
+            <xs:element name="readers" type="xs:string"/>
+            <xs:element name="staff" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="sections" type = "sectionsType"/>
+          
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType type = "sectionsType">
+        <xs:all>
+            <xs:element name="section" maxOccurs="unbounded" type = "sectionType"/>
+        </xs:all> 
+    </xs:complexType>
+             
+    <xs:complexType type = "sectionType">
+        <xs:all>
+            <xs:element name="book" maxOccurs="unbounded" type = "bookType"/>
+        </xs:all>
+    </xs:complexType>
+                               
+    <xs:complexType type = "bookType">   
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="chapters" type="xs:string"/>
+            <xs:element name="yearPublished" type="xs:string"/>
+            <xs:element name="TheEdition" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+                                  
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<football> 
+    <coach> the coach </coach>
+    <player>
+        <name>Ali</name>
+        <number> 50 </number>
+        <countary> cairo </country>
+    </player> 
+
+    <player>
+        <name> Sam </name>
+        <number> 20 </number>
+        <countary> America </country>
+    </player>   				
+        
+</football>
+        
+    
+
+    
+
+
+
+
+

@@ -3,6 +3,14 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
+-->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
 
 <!DOCTYPE library [
 
@@ -19,11 +27,11 @@ and open the template in the editor.
 <!ATTLIST book id CDATA #REQUIRED>
 ]>
 
+<!DOCTYPE library SYSTEM "LibraryDID.dtd">
 
 
 -->
 
-<!DOCTYPE library SYSTEM "LibraryDID.dtd">
 <library>
     
     <readers> Welcome Readers</readers>
@@ -32,16 +40,16 @@ and open the template in the editor.
     <sections> 
     
         <sectoin> 
-         <math>
-            <book id = "11" >
+        
+                <book>
                 <title>First Math</title>
                 <author>sam </author>
                 <chapters> 20 </chapters>
                 <yearPublished> 2015</yearPublished>
                 <TheEdition> 8th </TheEdition> 
-            </book>
+                  </book>
             
-            <book id = "50" >
+            <book >
                 <title>Second math</title>
                 <author> ali </author>
                 <chapters> 10 </chapters>
@@ -49,19 +57,19 @@ and open the template in the editor.
                 <TheEdition> 7th </TheEdition> 
             </book>
             
-            <book id = "30" >
+            <book >
                 <title> third math </title>
                  <author> yomna </author>
                 <chapters> 5 </chapters>
                 <yearPublished> 2020</yearPublished>
                 <TheEdition> 8th </TheEdition> 
             </book>
-                 </math>   
+                   
         </sectoin>
        
         <sectoin> 
-         <novels>
-            <book id = "40" >
+         
+            <book  >
                 <title> first novel</title>
                 <author> mohamed</author>
                 <chapters> 14 </chapters>
@@ -69,7 +77,7 @@ and open the template in the editor.
                 <TheEdition> 5th </TheEdition> 
             </book>
             
-            <book id = "80" >
+            <book >
                 <title> second novel </title>
                 <author> auston </author>
                 <chapters> 18 </chapters>
@@ -77,14 +85,14 @@ and open the template in the editor.
                 <TheEdition> 12th </TheEdition> 
             </book>
             
-            <book id = "90" >
+            <book  >
                 <title> third novel</title>
                 <author> ali </author>
                 <chapters> 15</chapters>
                 <yearPublished> 2020</yearPublished>
                 <TheEdition>14th </TheEdition> 
             </book>
-                 </novels>   
+                  
         </sectoin>                
         
     </sections>

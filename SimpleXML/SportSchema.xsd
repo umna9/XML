@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+<team>
+    <sport>
+        <football> 
+              <coach> the coach </coach>
+                <players>Here is the players 
+                
+                    <p>Sam</p>
+                    <p>ronaldo</p>
+                    <p>pele</p>
+                    <p>messi</p>
+                    <p>neymar</p>
+                    <p>ali</p>
+                    <p>omar</p>
+                    <p>amr</p>
+                    <p>wael</p>
+                    <p>ziad</p>
+                </players>    
+        
+        </football>
+        
+    </sport>
+
+    
+</team>
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name = "football" type = "footballType">
+    <xs:complexType type = "footballType">
+        <xs:all>
+            <xs:element name="coach" type="xs:string"/>
+            <xs:element name="player" maxOccurs="unbounded" type = "playerType">
+                <xs:complexType type = "playerType">
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="number" type="xs:string"/>
+                        <xs:element name="countary" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+        
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
